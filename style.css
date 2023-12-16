@@ -1,0 +1,97 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: black;
+}
+.card{
+    color: pink;
+    width:90%;
+    max-width:470px;
+    margin:100px auto; 
+    padding:50px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    border-radius: 20px;
+    /* text-align:center;  */ 
+    /* we can use text-align to center div elements as well
+    https://www.youtube.com/watch?v=rtFffkOtzTo */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search{
+    width:100%;
+    /* background-color: pink; */
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.search input{
+    border:0;
+    outline:0; 
+    /* by default jo bhi border and outlinr hai, woh ham hata denge */
+    background:#ebfffc;
+    color:#555;
+    height:40px;
+    padding:10px;
+    border-radius: 30px;
+    font-size:15px;
+    flex:1;
+    margin-right:18px;
+}
+.search button{
+    height:40px;
+    width:40px;
+    border:0;
+    border-radius: 50%;
+    cursor:pointer; 
+    /* pointer se ek hand jaisa sign aa jayega when you hover over button */
+}
+.search button img{
+    width:14px;
+    margin-top:5px;
+}
+.temp{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:40px;
+    color:#ffff;
+    font-size:20px;
+}
+.temp-value{
+    font-size: 50px;
+    margin-bottom:5px;
+}
+.humidity-wind{
+    display:flex;
+    justify-content: space-between;
+    color:#ffff;
+    font-size: 13px;
+}
+.humidity,.wind-speed{
+    display:flex;
+    align-items: center;
+}
+.humidity img,.wind-speed img{
+    height:30px;
+    margin-right:10px;
+}
+.humidity-value,.wind-speed-value
+{
+    font-size: 18px;
+}
+.error{
+    text-align: center;
+    margin-top:20px;
+    font-size: 20px;
+    color:white;
+    display:none;
+}
+.weather{
+    display: none;
+}
